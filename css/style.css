@@ -1,8 +1,111 @@
+html{
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+
+body{
+    background-color: beige;
+    margin: 0px auto;
+    height: 100vh;
+    width: 100vw;
+}
+
 .hidden{
     display: none;
 }
 
-img{
+img {
+    position:absolute;
+    left: 0px;
+    top: 0px;
+    right:0px;
+    bottom:0px;
+    display: block;
+    margin: 0px auto;
+    z-index: -1;
+    opacity:80%;
     height: 100vh;
-    
+
+}
+
+#weather{
+    text-align: right;
+    margin: 10px;
+}
+
+
+#hello{
+
+    text-align: center;
+    margin: 100px 0px;
+}
+
+.login_button{
+    display: block;
+    padding: 0px;
+    margin-left: 50%;
+}
+
+
+#greeting{
+    font-size: 80px;
+    margin: 0px;
+}
+
+#clock{
+    font-size: 50px;
+    margin: 0px;
+}
+
+.logout_button{
+    display: block;
+    padding: 0px;
+    margin-left: 47%;
+}
+
+#middle{
+
+    height: max-content;
+    font-size: 20px;
+}
+
+#todo{
+    height: fit-content;
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 50%;
+    height: fit-content;
+    margin: 0px auto;
+    padding: 0%;
+}
+
+#todo-form{
+
+}
+
+#todo-list{
+    padding: 0%;
+    display: list-item;
+    list-style: none;
+
+}
+
+#quote{
+    height: max-content;
+    width: 50%;
+    margin: 0px auto;
+    line-height: 1fr;
+    text-align: center;
+    padding: 100px 0px;
+}
+
+#en{
+    display: block;
+    margin-bottom: 10px;
+}
+
+#kr{
+    display: block;
 }
