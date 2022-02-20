@@ -14,10 +14,22 @@ function onLoginSubmit(event) {
     paintGreeting();
 }
 
+function onLogoutSubmit(event) {
+    loginForm.classList.remove(HIDDEN_CLASSNAME);
+    localStorage.removeItem(USERNAME_KEY, loginInput.value);
+    greeting.classList.add(HIDDEN_CLASSNAME);
+}
+
 function paintGreeting() {
     const username = localStorage.getItem(USERNAME_KEY);
     greeting.innerText = `Hello ${username}`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
+    
+    const button = document.createElement("button");
+    button.innerText = "Log out";
+    greeting.appendChild(button);
+
+    button.addEventListener("click", onLogoutSubmit)
 }
 
 const saveUsername = localStorage.getItem(USERNAME_KEY);
@@ -30,5 +42,5 @@ if (saveUsername === null) {
 } else {
     //show the greeting
     paintGreeting();
-}
+} 
 
